@@ -4,4 +4,34 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>Controller</servlet-name>
+  	<display-name>Controller</display-name>
+  	<description></description>
+  	<servlet-class>mine.Controller</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SiteController</servlet-name>
+  	<display-name>SiteController</display-name>
+  	<description></description>
+  	<servlet-class>mine.session.SiteController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>MemberAreaController</servlet-name>
+  	<display-name>MemberAreaController</display-name>
+  	<description></description>
+  	<servlet-class>mine.session.MemberAreaController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Controller</servlet-name>
+  	<url-pattern>/Controller</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SiteController</servlet-name>
+  	<url-pattern>/SiteController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>MemberAreaController</servlet-name>
+  	<url-pattern>/MemberAreaController</url-pattern>
+  </servlet-mapping>
 </web-app>
